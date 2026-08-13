@@ -18,7 +18,7 @@ Expected to also work on: HW-Q990D, HW-Q800D, HW-QS730D, HW-S800D, HW-S801D, HW-
 ## Install
 
 ```bash
-npm install -g homebridge-samsung-soundbar-local
+npm install -g @snapeos/homebridge-samsung-soundbar-local
 ```
 
 Then add to your Homebridge config, or use the Config UI X form:
@@ -100,4 +100,4 @@ Protocol behaviour derived from [ZtF/hass-samsung-soundbar-local](https://github
 
 ## Licence
 
-MIT
+[MIT](LICENSE) © Andrew Snape

@@ -13,7 +13,7 @@
 
 set -euo pipefail
 
-GH_USER="${1:-snapeos}"
+GH_USER="${1:-andrew-snape}"
 REPO="${2:-homebridge-samsung-soundbar-local}"
 BRANCH="main"
 

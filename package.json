@@ -33,12 +33,12 @@
   "author": "Andrew Snape",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/snapeos/homebridge-samsung-soundbar-local.git"
+    "url": "git+https://github.com/andrew-snape/homebridge-samsung-soundbar-local.git"
   },
   "bugs": {
-    "url": "https://github.com/snapeos/homebridge-samsung-soundbar-local/issues"
+    "url": "https://github.com/andrew-snape/homebridge-samsung-soundbar-local/issues"
   },
-  "homepage": "https://github.com/snapeos/homebridge-samsung-soundbar-local#readme",
+  "homepage": "https://github.com/andrew-snape/homebridge-samsung-soundbar-local#readme",
   "publishConfig": {
     "access": "public"
   }

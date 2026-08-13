@@ -1,0 +1,66 @@
+{
+  "pluginAlias": "SamsungSoundbarLocal",
+  "pluginType": "platform",
+  "singular": true,
+  "headerDisplay": "Local control of Samsung D-series and later soundbars over the IP Control interface on port 1516. No SmartThings account or internet connection required.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "default": "Soundbar",
+        "required": true,
+        "description": "Name shown in the Home app."
+      },
+      "host": {
+        "title": "IP Address",
+        "type": "string",
+        "required": true,
+        "format": "ipv4",
+        "description": "Give the soundbar a DHCP reservation so this does not change."
+      },
+      "port": {
+        "title": "Port",
+        "type": "integer",
+        "default": 1516,
+        "required": false
+      },
+      "model": {
+        "title": "Model",
+        "type": "string",
+        "default": "Q-Series Soundbar",
+        "required": false,
+        "description": "Cosmetic only. Shown in the accessory details."
+      },
+      "maxVolume": {
+        "title": "Maximum Volume",
+        "type": "integer",
+        "default": 40,
+        "minimum": 1,
+        "maximum": 100,
+        "required": false,
+        "description": "The top of the soundbar's own volume scale, or a lower ceiling if you want the HomeKit slider spread across only the range you actually use. The HW-Q930D tops out around 40. Setting this lower than the hardware maximum acts as a volume limit."
+      },
+      "pollInterval": {
+        "title": "Poll Interval (seconds)",
+        "type": "integer",
+        "default": 10,
+        "minimum": 5,
+        "maximum": 300,
+        "required": false
+      },
+      "inputs": {
+        "title": "Inputs to expose",
+        "type": "array",
+        "required": false,
+        "default": ["E_ARC", "HDMI_IN1", "HDMI_IN2", "D_IN", "BT", "WIFI_IDLE"],
+        "items": {
+          "type": "string",
+          "enum": ["E_ARC", "ARC", "HDMI_IN1", "HDMI_IN2", "D_IN", "BT", "WIFI_IDLE"]
+        },
+        "description": "Leave unset to expose all of them."
+      }
+    }
+  }
+}

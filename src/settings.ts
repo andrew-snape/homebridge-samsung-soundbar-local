@@ -1,2 +1,2 @@
 export const PLATFORM_NAME = 'SamsungSoundbarLocal';
-export const PLUGIN_NAME = 'homebridge-samsung-soundbar-local';
+export const PLUGIN_NAME = '@snapeos/homebridge-samsung-soundbar-local';

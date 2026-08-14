@@ -1,7 +1,7 @@
 {
   "name": "@snapeos/homebridge-samsung-soundbar-local",
   "displayName": "Samsung Soundbar Local",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Local HomeKit control of Samsung D/F-series soundbars via the IP Control JSON-RPC interface. No cloud, no SmartThings.",
   "license": "MIT",
   "type": "module",

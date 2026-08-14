@@ -30,7 +30,7 @@ Then add to your Homebridge config, or use the Config UI X form:
       "platform": "SamsungSoundbarLocal",
       "name": "Soundbar",
       "host": "192.168.0.45",
-      "maxVolume": 40,
+      "maxVolume": 100,
       "pollInterval": 10
     }
   ]
@@ -92,7 +92,7 @@ node test-soundbar.mjs 192.168.0.45 --volume-probe
 
 The probe steps the volume up three and back down three, printing the reading each time. Use it to confirm the scale of your model, then set `maxVolume` to match.
 
-The API level matches the number on the soundbar's front panel exactly. The HW-Q930D tops out around 40, which is the default. Setting `maxVolume` below your hardware maximum spreads the HomeKit slider across only the range you actually use, and acts as a volume limit.
+The API level matches the number on the soundbar's front panel exactly. The HW-Q930D tops out at 100, which is the default. Setting `maxVolume` below your hardware maximum spreads the HomeKit slider across only the range you actually use, and acts as a volume limit.
 
 ## Credits
 

@@ -36,11 +36,11 @@
       "maxVolume": {
         "title": "Maximum Volume",
         "type": "integer",
-        "default": 40,
+        "default": 100,
         "minimum": 1,
         "maximum": 100,
         "required": false,
-        "description": "The top of the soundbar's own volume scale, or a lower ceiling if you want the HomeKit slider spread across only the range you actually use. The HW-Q930D tops out around 40. Setting this lower than the hardware maximum acts as a volume limit."
+        "description": "The top of the soundbar's own volume scale, or a lower ceiling if you want the HomeKit slider spread across only the range you actually use. The HW-Q930D tops out at 100. Setting this lower than the hardware maximum acts as a volume limit."
       },
       "pollInterval": {
         "title": "Poll Interval (seconds)",

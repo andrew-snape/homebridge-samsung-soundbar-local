@@ -55,7 +55,7 @@ export class SoundbarAccessory {
       config.host as string,
       (config.port as number) ?? 1516,
     );
-    this.maxVolume = (config.maxVolume as number) ?? 40;
+    this.maxVolume = (config.maxVolume as number) ?? 100;
 
     const enabled = (config.inputs as string[]) ?? ALL_INPUTS.map((i) => i.id);
     this.inputs = ALL_INPUTS.filter((i) => enabled.includes(i.id));
